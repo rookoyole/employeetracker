@@ -31,23 +31,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/rookoyole/notetaker">
-    <img src="./Main/public/assets/images/Profile-Pic.jpg" alt="Logo" width="80" height="80">
+  <a href="https://github.com/rookoyole/employeetracker">
+    <img src="./assets/images/Profile-Pic.jpg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Note Taker Application</h3>
+  <h3 align="center">Employee Tracker Database</h3>
 
   <p align="center">
-    UA Bootcamp - Module 11 Challenge
+    UA Bootcamp - Module 12 Challenge
         <br />
-        <a href="https://github.com/rookoyole/notetaker"><strong>Explore the docs »</strong></a>
+        <a href="https://github.com/rookoyole/employeetracker"><strong>Explore the docs »</strong></a>
         <br />
         <br />
-        <a href="https://github.com/rookoyole/notetaker">View Demo</a>
+        <a href="https://github.com/rookoyole/employeetracker">View Demo</a>
         ·
-        <a href="https://github.com/rookoyole/notetaker/issues">Report Bug</a>
+        <a href="https://github.com/rookoyole/employeetracker/issues">Report Bug</a>
         ·
-        <a href="https://github.com/rookoyole/notetaker/issues">Request Feature</a>
+        <a href="https://github.com/rookoyole/employeetracker/issues">Request Feature</a>
   </p>
 </p>
 
@@ -68,7 +68,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](Main/public/assets/images/screenshot.png)
+[![Product Name Screen Shot][product-screenshot]](assets/images/screenshot.png)
 <br />
 The purpose of this project was to create a note taking application with persistence using a remote server.
 
@@ -80,7 +80,7 @@ Features:
 <!-- PROJECT LINKS -->
 ## Project Links
 
-Repository Link: [https://github.com/rookoyole/notetaker](https://github.com/rookoyole/notetaker)
+Repository Link: [https://github.com/rookoyole/employeetracker](https://github.com/rookoyole/employeetracker)
 
 Deployed Link: [https://note-takey.herokuapp.com/](https://note-takey.herokuapp.com/)
 
@@ -93,14 +93,14 @@ Template from: https://github.com/othneildrew/Best-README-Template/blob/master/R
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/rookoyole/notetaker.svg?style=for-the-badge
-[contributors-url]: https://github.com/rookoyole/notetaker/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/rookoyole/notetaker.svg?style=for-the-badge
-[forks-url]: https://github.com/rookoyole/notetaker/network/members
-[stars-shield]: https://img.shields.io/github/stars/rookoyole/notetaker.svg?style=for-the-badge
-[stars-url]: https://github.com/rookoyole/notetaker/stargazers
-[issues-shield]: https://img.shields.io/github/issues/rookoyole/notetaker.svg?style=for-the-badge
-[issues-url]: https://github.com/rookoyole/notetaker/issues
+[contributors-shield]: https://img.shields.io/github/contributors/rookoyole/employeetracker.svg?style=for-the-badge
+[contributors-url]: https://github.com/rookoyole/employeetracker/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/rookoyole/employeetracker.svg?style=for-the-badge
+[forks-url]: https://github.com/rookoyole/employeetracker/network/members
+[stars-shield]: https://img.shields.io/github/stars/rookoyole/employeetracker.svg?style=for-the-badge
+[stars-url]: https://github.com/rookoyole/employeetracker/stargazers
+[issues-shield]: https://img.shields.io/github/issues/rookoyole/employeetracker.svg?style=for-the-badge
+[issues-url]: https://github.com/rookoyole/employeetracker/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: www.linkedin.com/in/kyle-ryan-5b526023
-[product-screenshot]: Main/public/assets/images/screenshot.png
+[product-screenshot]: assets/images/screenshot.png
