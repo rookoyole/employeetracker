@@ -64,17 +64,6 @@ function loadMainPrompts ()
 
             //const sqlstatement = 'SELECT employee.*, role.* FROM employee LEFT JOIN role ON employee.role_id = role.id LEFT JOIN department ON role.department_id = department.id';
             //const sqlstatement = 'SELECT role.*, department.name FROM role LEFT JOIN department ON role.department_id = department.id';
-            //const sqlstatement = 'SELECT role.*, department.name FROM role LEFT JOIN department ON role.department_id = department.id LEFT JOIN employee ON department.id = employee.role_id';
-
-
-            //const sqlstatement = 'SELECT department.*, role.* FROM department LEFT JOIN role ON department.id = role.department_id JOIN LEFT employee ON role.id = employee.role_id';
-
-
-            //const sqlstatement = 'SELECT employee.id, employee.first_name, employee.last_name, role.title, role.salary FROM employee LEFT JOIN role ON employee.role_id = role.id LEFT JOIN department ON role.department_id = department.id';
-
-            //const sqlstatement = 'Select employee.*, department.* FROM employee, role, department WHERE role.role_id = employee.role_id and role.department_id = department.department_id';
-            //const sqlstatement = 'SELECT employee.*, department.* FROM employee INNER JOIN role ON employee.role_id = role.id INNER JOIN department ON role.department_id = department.id';
-          // const sqlstatement = sqlstatement1 + sqlstatement2;
             console.log('====================');
             console.log('View All Employees');
             console.log('====================');
@@ -96,6 +85,8 @@ function loadMainPrompts ()
             dbConnect(sqlstatement);
         }
         else if (choice === 'ADD_DEPARTMENT') {
+            INSERT INTO candidates (first_name, last_name, industry_connected)
+        VALUES ('Ronald', 'Firbank', 1);
             console.log('====================');
             console.log('Add Department');
             console.log('====================');
