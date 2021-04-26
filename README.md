@@ -70,12 +70,12 @@
 
 [![Product Name Screen Shot][product-screenshot]](assets/images/screenshot.png)
 <br />
-The purpose of this project was to create a note taking application with persistence using a remote server.
+The purpose of this project was to create a employee database query application.
 
 Features:
-* Title and additional text fields
-* Notes stored on left side of page
-* Each note is editable after saving
+* Employee info tracked: First/Last name, Role, Salary, Department and Manager
+* Add and update employee information
+* Add new employees to database
 
 <!-- PROJECT LINKS -->
 ## Project Links
