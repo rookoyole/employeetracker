@@ -1,9 +1,10 @@
 const { prompt } = require("inquirer");
+const util = require("util");
 const logo = require("asciiart-logo");
 //const db = require("./db");
-const inquirer = require("inquirer");
 const cTable = require("console.table");
 const mysql = require("mysql2");
+const inquirer = require("inquirer");
 
 init();
 
@@ -16,7 +17,7 @@ function init() {
     loadMainPrompts();
 }
 
-function loadMainPrompts () 
+async function loadMainPrompts () 
 {
     prompt([{
         type: "list",
@@ -68,6 +69,7 @@ function loadMainPrompts ()
             console.log('View All Employees');
             console.log('====================');
             dbConnect(sqlstatement);
+            loadMainPrompts();
         }
         else if (choice === 'VIEW_ROLES') {
             const sqlstatement = 'SELECT role.title, role.salary, department.name FROM role LEFT JOIN department ON role.department_id = department.id';
@@ -76,6 +78,7 @@ function loadMainPrompts ()
             console.log('View All Roles');
             console.log('====================');
             dbConnect(sqlstatement);
+            loadMainPrompts();
         }
         else if (choice === 'VIEW_DEPARTMENTS') {
             const sqlstatement = 'SELECT * FROM department';
@@ -83,28 +86,73 @@ function loadMainPrompts ()
             console.log('View All Departments');
             console.log('====================');
             dbConnect(sqlstatement);
+            loadMainPrompts();
         }
         else if (choice === 'ADD_DEPARTMENT') {
-            INSERT INTO candidates (first_name, last_name, industry_connected)
-        VALUES ('Ronald', 'Firbank', 1);
+            //const sqlstatement = {};
+            const dep = prompt([{
+                type: "input",
+                name: "dep",
+                message: "Add Department"
+            }]
+            );
+
+            const sqlstatement = 'INSERT INTO department (name) VALUES (?)';
+            dbConnect(sqlstatement,dep.dep);
+
             console.log('====================');
             console.log('Add Department');
             console.log('====================');
+            
+           loadMainPrompts();
         }
         else if (choice === 'ADD_ROLE') {
+
+            const dep = prompt([{
+                type: "input",
+                name: "role",
+                message: "Add Department"
+            }]
+            );
+
+            const sqlstatement = 'INSERT INTO role (name) VALUES (?)';
+            dbConnect(sqlstatement,role.role);
+
             console.log('====================');
             console.log('Add Role');
             console.log('====================');
+            loadMainPrompts();
         }
         else if (choice === 'ADD_EMPLOYEE') {
+            const dep = prompt([{
+                type: "input",
+                name: "emp",
+                message: "Add Department"
+            }]
+            );
+
+            const sqlstatement = 'INSERT INTO employee (name) VALUES (?)';
+            dbConnect(sqlstatement,emp.emp);
             console.log('====================');
             console.log('Add Employee');
             console.log('====================');
+            loadMainPrompts();
         }
         else if (choice === 'UPDATE_EMPLOYEE_ROLE') {
+            const dep = prompt([{
+                type: "input",
+                name: "upd",
+                message: "Add Department"
+            }]
+            );
+
+            const sqlstatement = 'INSERT INTO department (name) VALUES (?)';
+            dbConnect(sqlstatement,upd.upd);
+            
             console.log('====================');
             console.log('Update Employee Role');
             console.log('====================');
+            loadMainPrompts();
         }
     })
     .catch (error => {
@@ -121,9 +169,12 @@ function dbConnect (query) {
         database: 'employeetracker'
     });
     
+   //connection.query = util.promisify(connection.query);
+
     connection.query(query, function(err, results, fields) {
         console.log('Querying');
         const queryResult = cTable.getTable(results);
         console.log(queryResult);
     });
+    
 };
