@@ -82,7 +82,7 @@ Features:
 
 Repository Link: [https://github.com/rookoyole/employeetracker](https://github.com/rookoyole/employeetracker)
 
-Deployed Link: [https://note-takey.herokuapp.com/](https://note-takey.herokuapp.com/)
+Walkthrough Video Link: [https://drive.google.com/file/d/1ejhiVmS1qDTaig-aI60YD22wUw1pOEnb/view/](https://drive.google.com/file/d/1ejhiVmS1qDTaig-aI60YD22wUw1pOEnb/view)
 
 <!-- CONTACT -->
 ## Contact
